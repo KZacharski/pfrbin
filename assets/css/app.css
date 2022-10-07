@@ -6,14 +6,14 @@
 @import "./markdown.css";
 
 @font-face {
-    font-family: "JetBrains Mono";
-    src: url(/fonts/jetbrains_mono_variable.ttf);
+    font-family: "Roboto Mono";
+    src: url(/fonts/RobotoMono-VariableFont_wght.ttf);
     font-weight: 100 1000;
     font-stretch: 25% 151%;
 }
 
 * {
-    font-family: "JetBrains Mono", monospace;
+    font-family: "Roboto Mono", monospace;
     color: white;
     font-size: 14px;
     font-weight: bold;
@@ -68,11 +68,11 @@ body {
 }
 
 a {
-    color: #ff9800;
+    color: #22c55e;
 }
 
 a:hover {
-    color: #ff9800;
+    color: #22c55e;
     text-decoration: underline;
 }
 
@@ -81,7 +81,7 @@ header {
 }
 
 code {
-    font-family: "JetBrains Mono", monospace;
+    font-family: "Roboto Mono", monospace;
 }
 
 code {
@@ -107,7 +107,7 @@ textarea {
 
 ::-webkit-scrollbar-thumb {
     border-radius: 8px;
-    @apply bg-amber;
+    @apply bg-green;
 }
 
 .alert {
@@ -122,7 +122,7 @@ textarea {
 }
 
 .alert-danger {
-    background-color: #ff9800;
+    background-color: #22c55e;
     color: black;
     font-weight: bold;
 }

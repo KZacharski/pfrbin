@@ -1,5 +1,5 @@
 <div class="flex flex-col w-full h-full justify-center items-center">
-	<h1 class="font-bold text-4xl text-amber pt-4">Register</h1>
+	<h1 class="font-bold text-4xl text-green pt-4">Register</h1>
 
 	<%= form_for @changeset, Routes.user_registration_path(@conn, :create), [class: "flex flex-col h-full justify-center items-start m-auto"], fn f -> %>
 		<%= if @changeset.action do %>
@@ -20,12 +20,12 @@
 			<%= error_tag f, :password %>
 		</div>
 
-		<div class="bg-amber mt-4 rounded-sm px-2 py-1">
+		<div class="bg-green mt-4 rounded-sm px-2 py-1">
 			<%= submit "Sign up" %>
 		</div>
 	<% end %>
 
-	<p class="mb-4 text-amber">
+	<p class="mb-4 text-green">
 		<%= link "Log in", to: Routes.user_session_path(@conn, :new) %> <span>|</span>
 		<%= link "Forgot password?", to: Routes.user_reset_password_path(@conn, :new) %>
 	</p>

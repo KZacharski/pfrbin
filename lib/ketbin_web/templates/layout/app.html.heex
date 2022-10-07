@@ -5,35 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <%= if Map.has_key?(assigns, :page_title) do %>
-      <title>Katbin - <%= @page_title %></title>
+      <title>PfrBin - <%= @page_title %></title>
     <% else %>
-      <title>Katbin</title>
+      <title>PfrBin</title>
     <% end %>
-    <title itemprop="name">Katbin</title>
+    <title itemprop="name">PfrBin</title>
 
     <meta property="og:type" content="object">
-    <meta property="og:title" content="Katbin">
+    <meta property="og:title" content="PfrBin">
     <meta property="og:image" content="/favicon.ico">
 
-    <meta name="twitter:title" content="Katbin">
-    <meta itemprop="name" content="Katbin">
-    <meta name="application-name" content="Katbin">
-    <meta property="og:site_name" content="Katbin">
+    <meta name="twitter:title" content="PfrBin">
+    <meta itemprop="name" content="PfrBin">
+    <meta name="application-name" content="PfrBin">
+    <meta property="og:site_name" content="PfrBin">
     <meta name="theme-color" content="#1a1a1a">
     <meta property="og:locale" content="en">
     <meta name="language" content="en">
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:site" content="@Spherical_Kat">
+    <meta name="twitter:site" content="@puffercatt">
     <meta name="twitter:image" content="/favicon.ico">
 
-    <meta name="robots" content="index,follow">
-    <meta name="googlebot" content="index,follow">
-    <meta name="keywords" content="paste,pastebin,url,urlshortener,url-shortener,code,programming,bin,cat,kat,paste,share,save,login">
-    <meta name="coverage" content="Worldwide">
-    <meta name="distribution" content="Global">
-    <meta name="HandheldFriendly" content="True">
-    <meta name="HandheldFriendly" content="True">
-    <meta name="apple-mobile-web-app-title" content="Katbin">
+    <meta name="apple-mobile-web-app-title" content="PfrBin">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="apple-touch-fullscreen" content="yes">
@@ -44,18 +37,18 @@
         <meta property="og:description" content={@paste.content}>
         <meta name="twitter:description" content={@paste.content}>
 
-        <meta name="url" content={"https://katb.in/#{@paste.id}"}>
-        <meta name="twitter:url" content={"https://katb.in/#{@paste.id}"}>
-        <meta property="og:url" content={"https://katb.in/#{@paste.id}"}>
+        <meta name="url" content={"https://bin.puffercat.xyz/#{@paste.id}"}>
+        <meta name="twitter:url" content={"https://bin.puffercat.xyz/#{@paste.id}"}>
+        <meta property="og:url" content={"https://bin.puffercat.xyz/#{@paste.id}"}>
     <% else %>
-        <meta name="description" content="Paste, save, share! A pastebin and URL shortener for all your needs.">
-        <meta property="og:description" content="Paste, save, share! A pastebin and URL shortener for all your needs.">
-        <meta itemprop="og:description" content="Paste, save, share! A pastebin and URL shortener for all your needs.">
-        <meta name="twitter:description" content="Paste, save, share! A pastebin and URL shortener for all your needs.">
+        <meta name="description" content="Personal Katbin fork">
+        <meta property="og:description" content="Personal Katbin fork">
+        <meta itemprop="og:description" content="Personal Katbin fork">
+        <meta name="twitter:description" content="Personal Katbin fork">
 
-        <meta name="url" content="https://katb.in">
-        <meta name="twitter:url" content="https://katb.in">
-        <meta property="og:url" content="https://katb.in">
+        <meta name="url" content="https://bin.puffercat.xyz">
+        <meta name="twitter:url" content="https://bin.puffercat.xyz">
+        <meta property="og:url" content="https://bin.puffercat.xyz">
     <% end %>
 
     <link rel="stylesheet" href={ Routes.static_path(@conn, "/assets/app.css") }/>
@@ -65,7 +58,7 @@
     <header class="flex w-full justify-between items-center py-3 px-6">
      <a href={ Routes.page_path(@conn, :index) }>
         <span class="font-semibold text-xl tracking-tight">
-          <span class="text-amber text-xl">&lt;Kat</span>bin/&gt;
+          <span class="text-green text-xl">&lt;Pfr</span>Bin/&gt;
         </span>
       </a>
 
@@ -87,11 +80,11 @@
       <%= @inner_content %>
     </main>
     <footer class="font-bold">
-    <div class="flex px-4 py-1 text-xs sm:text-base justify-between text-amber" style="background: #1a1a1a; font-family: JetbrainsMono">
-      <a href="https://sphericalk.at">
-        © <%= DateTime.utc_now().year %> SphericalKat
+    <div class="flex px-4 py-1 text-xs sm:text-base justify-between text-green" style="background: #1a1a1a; font-family: RobotoMono">
+      <a href="https://puffercat.xyz">
+        © <%= DateTime.utc_now().year %> Puffercat & SphericalKat
       </a>
-      <a href="https://github.com/sphericalkat/katbin">
+      <a href="https://github.com/KZacharski/pfrbin">
         Fork me!
       </a>
       </div>

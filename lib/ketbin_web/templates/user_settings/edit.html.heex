@@ -1,8 +1,8 @@
-<h1 class="font-bold text-4xl text-amber pt-4 w-full text-center">Settings</h1>
+<h1 class="font-bold text-4xl text-green pt-4 w-full text-center">Settings</h1>
 
 <div class="flex w-full h-full justify-center items-center">
 <%= form_for @email_changeset, Routes.user_settings_path(@conn, :update), [class: "flex flex-col h-full justify-center items-start m-auto"], fn f -> %>
-	<h3 class="font-bold text-2xl text-amber pb-4">Change email</h3>
+	<h3 class="font-bold text-2xl text-green pb-4">Change email</h3>
 
   <%= if @email_changeset.action do %>
     <div class="alert alert-danger">
@@ -24,14 +24,14 @@
 		<%= error_tag f, :current_password %>
 	</div>
 
-  <div class="bg-amber mt-4 rounded-sm px-2 py-1">
+  <div class="bg-green mt-4 rounded-sm px-2 py-1">
     <%= submit "Change email" %>
   </div>
 <% end %>
 
 
 	<%= form_for @password_changeset, Routes.user_settings_path(@conn, :update), [class: "flex flex-col h-full justify-center items-start m-auto"], fn f -> %>
-		<h3 class="font-bold text-2xl text-amber pb-4">Change password</h3>
+		<h3 class="font-bold text-2xl text-green pb-4">Change password</h3>
 
 		<%= if @password_changeset.action do %>
 			<div class="alert alert-danger">
@@ -59,7 +59,7 @@
 			<%= error_tag f, :current_password %>
 		</div>
 
-		<div class="bg-amber mt-4 rounded-sm px-2 py-1">
+		<div class="bg-green mt-4 rounded-sm px-2 py-1">
 			<%= submit "Change password" %>
 		</div>
 	<% end %>
